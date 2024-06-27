@@ -41,35 +41,59 @@ body{
 .a{
     width:300px;
     margin: 5px;
+   
+}
+.skills{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+.s{
+    width:100px;
+    height:100px;
+    margin: 5px;
     background-color: aqua;
+}
+.range-all{
+    display: flex;
+    flex-flow: row wrap;
+}
+.range{
+    margin:20px;
+    min-width:300px;
 }
 .education{
     display: flex;
     flex-flow: row wrap; 
+    justify-content: center;
 }
 .e{
-    width:500px;
-    margin: 5px;
-    background-color: aqua;
+    width:300px;
+    min-width:200px;
+    padding-left: 20px;
+    margin:4px 10px;
+    border-left: 2px solid black ;
+    border-bottom: 4px solid rgb(200, 235, 234);
+    border-radius: 20px;
+   
 }
 .projects{
     display: flex;
     flex-flow: row wrap; 
+    justify-content: center;
 }
 .p{
-    width:500px;
+    width:400px;
     margin: 5px;
+    padding-right: 10px;
     background-color: aqua;
 }
 .sec{
     display: flex;
     flex-flow: row wrap;
 }
-.s{
-    width:500px;
-    margin: 5px;
-    background-color: aqua;
-}
+
 .hero-contact{
     align-content: center;
     padding-left: 30px;
