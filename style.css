@@ -23,6 +23,15 @@ body{
     margin:10px;
 }
 
+.section-heading{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration:underline;
+    letter-spacing: 2px;
+}
+
 .hero{
     display: flex;
     flex-flow: row wrap; 
@@ -85,15 +94,37 @@ body{
 }
 .p{
     width:400px;
-    margin: 5px;
+    margin: 10px;
     padding-right: 10px;
-    background-color: aqua;
+    border-left: 2px solid black ;
+    border-bottom: 4px solid rgb(200, 235, 234);
+    border-radius: 20px;
+
 }
 .sec{
     display: flex;
     flex-flow: row wrap;
 }
-
+.contact{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+.c{
+    margin:5px;
+    width: 400px;
+    padding-left:30px;
+}
+.form{
+    padding-right:30px;
+    flex-grow: 1;
+}
+.per{
+    font-size: 20px;
+    margin: 15px; 
+    font-weight: 500;
+}
 .hero-contact{
     align-content: center;
     padding-left: 30px;
@@ -111,4 +142,8 @@ body{
     font-weight: 600;
     font-size: 30px;
     color: gray;
+}
+.logo{
+    width:300px;
+    height:30px;
 }
