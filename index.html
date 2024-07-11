@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="bootstrap/js/jquery.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <script src="bootstrap/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg  navbar-light bg-light" >
+    <nav class="navbar navbar-expand-lg bg-light "style="min-width:400px;width:100%;" >
        <div class="container">       
-        <a class="navbar-brand" style="text-align:center;"href="#">Developer</a>
+        <a class="navbar-brand" style="text-align:center;color:rgba(33, 191, 202, 0.486);font-weight: 700;font-size: 25px;"href="#">Developer</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,34 +52,36 @@
     <div class="container">
      
      <div class="section">
-        <div class="sec hero" id="home">
-           <div class="h hero-contact">
+        <div class="sec hero" id="home"  data-aos="fade-up">
+           <div class="h hero-contact" style="min-width:300px;max-width:400px;">
             <div class="am">
               I am 
             </div>
             <div class="name">
               Mohamed Abdulla
             </div>
-            <div class="dev">
+           
+            <div id="dev" class="dev" > 
               PHP DEVELOPER
-            </div>
+              <!--<div class="btn btn-success" onclick="type()">hi</div> -->
+               </div>
             <span style="font-size:10px;margin-left:70px;background-color: yellow;">Still Long Way To Go!</span><br>
             <div class="btn" style="align-items: baseline">
               <a href="https://drive.google.com/file/d/1JpB2r5xMoKHSabZrNFAaX-XM_ZeItD8e/view?usp=drivesdk" target="_blank"><span class="btn "   style="background-color: #0099f8;color:white;"><i class="fa-solid fa-download" style="margin-right:5px;"></i>Resume</span></a>
               <a href="mailto:mohamedabdullah0209@gmail.com" target="_blank"><span class="btn" style="background-color: #0099f8;color:white"><i class="fa-solid fa-handshake" style="margin-right:5px;"></i>Hire me</span></a>
             </div>
            </div>
-          <div class="h hero-photo" style="float:right;">
-            <img src="abd.jpg" alt="my photo" style="min-width:100px;max-width:300px;text-align:center;height:auto;z-index:-1;">
+          <div class="h hero-photo">
+            <img src="img/hero1.jpg" alt="my photo"data-aos-once="false" data-aos="zoom-in" style="min-width:294px; width:100%; border-radius: 20px;height:450px;z-index:-1;">
           </div> 
 
         </div>
-        <div class="sec about" id="about">
-          <div class="section-heading">About Me</div>
-          <div class="a about-photo"> 
-            <img src="abd1.jpg" alt="my photo" style="width:300px;height:350px;justify-content:center;">
+        <div class="sec about" id="about" style="background-color: #88bdbc;">
+          <div class="section-heading" style="color:#254e58">About Me</div>
+          <div class="a about-photo" style="width:300px"> 
+            <img src="img/abd.jpg" alt="my photo" style="width:300px; border-radius: 10px;height:350px;justify-content:center;">
           </div>
-          <div class="a about-contant" style="flex-grow: 5;">
+          <div class="a about-contant" style="flex-grow: 5;width:300px;">
             <div class="con" style="font-size:20px;margin:40px 20px;text-align:justify;">
                I am a Full Stack Web Developer who is
             passionate about my work. Always curious to learn
@@ -85,71 +90,71 @@
             my hobbies. I also enjoy the process of turning an
             idea into a real world application.
             </div>
-            <div class="range-all">
-              <span class=" range range1">
+          
+            <div class="a range-all" style="float:rigth" data-aos="fade-up">
+              <span class=" range range1" data-aos="fade-right">
                 <label for="file">Web Development:</label> <span style="float:right;margin-right:20px;">90%</span>
                 <progress id="file"  style="width:90%;" value="90" max="100"> 80 </progress>
               </span>
-              <span class=" range range2">
-                <label for="file">Web Design:</label> <span style="float:right;margin-right:20px;">80%</span>
-                <progress id="file" style="width:90%;"value="80" max="100"> 80 </progress>
+              <span class=" range range2" data-aos="fade-left">
+                <label for="file">Web Design:</label> <span style="float:right;margin-right:20px;">70%</span>
+                <progress id="file" style="width:90%;"value="70" max="100"> 70 </progress>
               </span> 
-              <span class=" range range3">
+              <span class=" range range3" data-aos="fade-right">
                 <label for="file">Time Management:</label> <span style="float:right;margin-right:20px;">90%</span>
                 <progress id="file" style="width:90%;"style="justify-content:center;"value="90" max="100"> 90 </progress>
               </span> 
-              <span class=" range range4">
+              <span class=" range range4" data-aos="fade-left">
                 <label for="file">Problem Solving:</label> <span style="float:right;margin-right:20px;">95%</span>
                 <progress id="file" style="width:90%;"value="95" max="100"> 95 </progress>
               </span>  
             </div>
           </div>
         </div>
-        <div class="sec skills" id="skills">
-          <div class="section-heading">Skills</div>
-          <div class="s skill1">LARAVEL 10</div>
-          <div class="s skill2">PHP</div>
-          <div class="s skill3">MYSQL</div>
-          <div class="s skill4">JAVASCRIPT</div>
-          <div class="s skill5">AJAX</div>
-          <div class="s skill6">JQUERY</div>
-          <div class="s skill7">GIT</div>
-          <div class="s skill8">HTML</div>
-          <div class="s skill9">CSS</div>
-          <div class="s skill10">BOOTSTRAP 4</div>
-          <div class="s skill11">CMD</div>
-          <div class="s skill12">VISUAL STUDIO</div>
-          <div class="s skill13">PYTHON</div>
-          <div class="s skill14">JUPYTER NOTEBOOK</div>
-          STILL LONG WAY TO GO!
+        <!-- <div class="sec skills" id="skills" data-aos="fade-up" style="background-color: #fbe9d0;"> -->
+        <div class="sec skills" id="skills" data-aos="fade-up" style="background-color: #aad8f4;">
+          <div class="section-heading" style="color:#e64833">Skills</div>
+          <div class="s skill1"><img src="img/laravel.png" alt="laravel"width=150px; height="150px;"></div>
+          <div class="s skill2"><img src="img/php.png" alt="PHP" width=200px;   height="150px;"></div>
+          <div class="s skill3"><img src="img/mysql.png" alt="MySQL" width=150px; height="150px;"></div>
+          <div class="s skill4"><img src="img/js.png" alt="JAVA SCRIPT"  width=150px; height="150px;"></div>
+          <div class="s skill5"><img src="img/html.png" alt="HTML"  width=150px; height="150px;"></div>
+          <div class="s skill6"><img src="img/css.png" alt="CSS"  width=150px; height="150px;"></div>
+          <div class="s skill7"><img src="img/jq.png" alt="jQuery" width=150px; height="150px;"></div>
+          <div class="s skill8"><img src="img/git.png" alt="GIT"  width=150px; height="150px;"></div>
+          <div class="s skill9"><img src="img/boot.png" alt="BOOTSTRAP"  width=150px; height="150px;"></div>
+          <div class="s skill10"><img src="img/cmd.png" alt="CMD"  width=150px; height="150px;"></div>
+          <div class="s skill11"><img src="img/vs.png" alt="VISUAL STUDIO" width=150px; height="150px;"></div>
+          <div class="s skill12"><img src="img/py.png" alt="PYTHON"  width=150px; height="150px;"></div>
+          <div class="s skill13"><img src="img/jupyter.svg" alt="JUPYTER" width=150px; height="150px;"></div>
         </div>
-        <div class="sec education" id="education" style="padding:20px;">
-          <div class="section-heading">Education</div>
-          <div class="e mclg"><div class="date">August 2022 to March 2024</div>
+        <div class="sec education" id="education" style="padding:20px;background-color:#b3b4bd" data-aos="fade-up">
+          <div class="section-heading" style="color:#050a44">Education</div>
+          <div class="e mclg" data-aos="fade-right"><div class="date">August 2022 to March 2024</div>
             <div class="degree" style="font-size:20px;font-weight:600;">Master of Compter Science</div>
-              <div class="mclg">Bharathidasan University.</div>
+              <div class="mclg" style="font-weight:800">Bharathidasan University.</div>
               <div class="cmark">80%</div>
           </div>
-          <div class="e bclg">
+          <div class="e bclg" data-aos="fade-left">
             <div class="date"> May 2019 to April 2024</div>
             <div class="degree" style="font-size:20px;font-weight:600;">Bacholar of Compter Science</div>
-              <div class="mclg">Bharathidasan University.</div>
+              <div class="mclg" style="font-weight:800">Bharathidasan University</div>
               <div class="cmark">87%</div>
           </div>
-          <div class="e 12scl">
+          <div class="e 12scl" data-aos="fade-right">
             <div class="date">May 2018 to May 2019</div>
-            <div class="class" style="font-size:20px;font-weight:600;">12 th</div>
-            <div class="scl">Manba-ul-ula HR SEC School</div>
+            <div class="class degree" style="font-size:20px;font-weight:600;">12 th</div>
+            <div class="scl" style="font-weight:800">Manba-ul-ula HR SEC School</div>
             <div class="smark">70%</div>
           </div>
-          <div class="e scl" >
+          <div class="e scl" data-aos="fade-left" >
             <div class="date">May 2016 to May 2017</div>
-            <div class="class" style="font-size:20px;font-weight:600;">10 th</div>
-            <div class="scl">Manba-ul-ula HR SEC School</div>
+            <div class="class degree" style="font-size:20px;font-weight:600;">10 th</div>
+            <div class="scl" style="font-weight:800" >Manba-ul-ula HR SEC School</div>
             <div class="smark">84%</div>
           </div>
         </div>
-        <div class="sec projects" id="project">
+        <div class="sec projects" id="project" data-aos="fade-up">
           <div class="section-heading">Project</div>
           <div class=" decs" style="font-size:20px;margin:40px 20px;text-align:justify;width:100%">
             This is my favourite section any other among sections. 
@@ -157,7 +162,7 @@
             I'm done many mini-project. All of them uploaded on my
             <a href="https://github.com/ab797-pixel" target="-blank">github page</a> and listed below: 
           </div>
-          <div class="p hall">
+          <div class="p hall" data-aos="fade-right">
             <div class="project-heading" style="font-size:20px;font-weight:600;display:inline;text-decoration: underline;padding-left:10px;">Hall Allocation|</div>
                <a href="https://github.com/ab797-pixel/Hall_Allocation" target="_blank" style="font-size:12px;">LINK</a>
               <span class="time-line" style="float:right">Aug-2023</span>
@@ -176,7 +181,7 @@
                   
               </div>
           </div>
-          <div class="p organ">
+          <div class="p organ" data-aos="fade-left">
             <div class="project-heading" style="font-size:20px;font-weight:600;display:inline;text-decoration: underline;padding-left:10px;">Organ Sharing Donor & Finder|</div>
               <a href="https://github.com/ab797-pixel/Organ_Sharing_Donar_And_Finder" target="_blank" style="font-size:12px;">LINK</a>
              <span class="time-line" style="float:right">Jan-2024</span>
@@ -192,7 +197,7 @@
                 </ul>
              </div>
           </div>
-          <div class="p attendance">
+          <div class="p attendance" data-aos="fade-right">
             <div class="project-heading" style="font-size:20px;font-weight:600;display:inline;text-decoration: underline;padding-left:10px;">Attendance Report Generator|</div>
             <a href="https://github.com/ab797-pixel/Attendance_Report_Generator" target="_blank" style="font-size:12px;">LINK</a>
             <span class="time-line" style="float:right">Feb-2024</span>
@@ -206,7 +211,7 @@
             </ul>
            </div>
           </div>
-          <div class="p time">
+          <div class="p time" data-aos="fade-left">
             <div class="project-heading" style="font-size:20px;font-weight:600;display:inline;text-decoration: underline;padding-left:10px;">Time-Table Schedule Maker|</div>
               <a href="https://github.com/ab797-pixel/Time_table_schedule_maker" target="_blank" style="font-size:12px;">LINK</a>
               <span class="time-line" style="float:right">Mar-2024</span>
@@ -221,7 +226,7 @@
                 </ul>
              </div>
           </div>
-          <div class="p quote">
+          <div class="p quote" data-aos="fade-right">
             <div class="project-heading" style="font-size:20px;font-weight:600;display:inline;text-decoration: underline;padding-left:10px;">Quotes of The Day|</div> 
               <a href="https://github.com/ab797-pixel/Techplement" target="_blank" style="font-size:12px;">LINK</a>
               <span class="time-line" style="float:right">May-2024</span>
@@ -234,7 +239,7 @@
               </ul>
              </div>
           </div>
-          <div class="p student">
+          <div class="p student" data-aos="fade-left">
             <div class="project-heading" style="font-size:20px;font-weight:600;display:inline;text-decoration: underline;padding-left:10px;">Student Feedback|</div>
               <a href="https://github.com/ab797-pixel/student_feedback" target="_blank" style="font-size:12px;">LINK</a>
              <span class="time-line" style="float:right">Feb-2023</span>
@@ -243,7 +248,7 @@
               The purpose of this feedback system is to gather information on learning experience as 
               well as the about lecturer(s) performance in the class.</div>
           </div>
-          <div class="p air-line">
+          <div class="p air-line" data-aos="fade-down">
             <div class="project-heading" style="font-size:20px;font-weight:600;display:inline;text-decoration: underline;padding-left:10px;">Air Line Reservation|</div>
               <a href="https://github.com/ab797-pixel/air_line" target="_blank" style="font-size:12px;">LINK</a>
              <span class="time-line" style="float:right">Sep-2022</span>
@@ -253,8 +258,8 @@
           </div>
           
         </div>
-        <div class="sec contact" id="contact">
-          <div class="section-heading">Contact</div>
+        <div class="sec contact" id="contact" style="background-color: #def2f1;" data-aos="fade-up">
+          <div class="section-heading" style="color:#17252a">Contact</div>
           <div class="c form">
             <form action="">
               <div class="form-group">
@@ -281,13 +286,13 @@
             </form>
           </div>
           <div class="c personal">
-            <div class="per name-1"><i class="fa-solid fa-user" style="color:#0099f8;font-size: 25px;margin-right:10px;"></i>Mohamed Abdulla</div>
-            <div class="per role"><i class="fa-solid fa-code" style="color:#0099f8;font-size: 25px;margin-right:10px;"></i>Web Developer & Designer</div>
-            <div class="per email" style="font-size: 17px;"><i class="fa-solid fa-envelope" style="color:#0099f8;margin-right:10px;"></i>
+            <div class="per name-1"><i class="fa-solid fa-user" style="color:#2b7a78;font-size: 25px;margin-right:10px;"></i>Mohamed Abdulla</div>
+            <div class="per role"><i class="fa-solid fa-code" style="color:#2b7a78;font-size: 25px;margin-right:10px;"></i>Web Developer & Designer</div>
+            <div class="per email" style="font-size: 17px;"><i class="fa-solid fa-envelope" style="color:#2b7a78;margin-right:10px;"></i>
               <a href="mailto:mohamedabdullah0209@gmail.com" style="color:black"target="_blank">mohamedabdullah0209@gmail.com</a>
             </div>
-            <div class="per phone"><i class="fa-solid fa-phone" style="color:#0099f8;font-size:25px;margin-right:10px;"></i>+91 9487741714</div>
-            <div class="per location"><i class="fa-solid fa-location-dot" style="color:#0099f8;font-size:25px;margin-right:10px;"></i>Thiruvarur,TN,India.</div>
+            <div class="per phone"><i class="fa-solid fa-phone" style="color:#2b7a78;font-size:25px;margin-right:10px;"></i>+91 9487741714</div>
+            <div class="per location"><i class="fa-solid fa-location-dot" style="color:#2b7a78;font-size:25px;margin-right:10px;"></i>Thiruvarur,TN,India.</div>
             <div class="per-logos">
               <span class="logo git"><a href="https://github.com/ab797-pixel" target="_blank"><i class="fa-brands fa-github"></i></a></span>
               <span class="logo in" ><a href="https://www.linkedin.com/in/mohamed-abdulla-37a51a202/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></span>
@@ -301,5 +306,28 @@
       © Copyright Mohamed Abdulla. All Rights Reserved
      </div>
     </div>
-</body>
-</html>
+   <script>
+      
+      
+    var roles = ['PHP DEVELOPER','BACK-END DEVELOPER', 'LARAVEL'];
+    var i =0,j=0,delay = 2000;
+    setTimeout(type, delay);
+    function type() {
+      var role = roles[i];
+      console.log(role);
+      document.getElementById('dev').innerHTML = '';
+      document.getElementById('dev').innerHTML = role;   
+      if(roles.length == i+1){
+        i =0;
+      }else{
+        i++;
+      }
+      setTimeout(type, delay);
+    }
+    AOS.init();
+   </script>
+   
+ 
+    
+   </body>
+   </html>
